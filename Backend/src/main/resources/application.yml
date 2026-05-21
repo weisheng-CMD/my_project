@@ -7,10 +7,11 @@ spring:
     name: smart-ticket-system
 
   # ==================== 数据库 ====================
+  # 实际密码请通过环境变量或 application-prod.yml / application-dev.yml 设置
   datasource:
-    url: jdbc:mysql://38.76.207.21:3306/my_project?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-    username: my_project
-    password: ixcrDaYsyE5Hc6bh
+    url: ${DB_URL:jdbc:mysql://localhost:3306/my_project?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   # ==================== SQL 初始化 ====================
