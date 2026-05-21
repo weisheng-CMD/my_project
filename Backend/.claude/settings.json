@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"C:\\\\Users\\\\魏升林\\\\.m2\\\\repository\\\\org\\\\springframework\\\\boot\\\\spring-boot-docker-compose\\\\4.0.6\" -name \"*.jar\" | head -1)",
+      "Read(//c/Users/魏升林/.m2/repository/org/springframework/boot/spring-boot-docker-compose/4.0.6/**)",
+      "Bash(jar tf *)",
+      "Bash(javap -p -cp spring-boot-docker-compose-4.0.6.jar org.springframework.boot.docker.compose.lifecycle.DockerComposeProperties)",
+      "Bash(jar xf *)",
+      "Bash(javap -p -cp . org.springframework.boot.docker.compose.lifecycle.DockerComposeProperties)",
+      "Bash(javap -p -cp \"C:\\\\Users\\\\魏升林\\\\.m2\\\\repository\\\\org\\\\springframework\\\\boot\\\\spring-boot-docker-compose\\\\4.0.6\\\\spring-boot-docker-compose-4.0.6.jar\" org.springframework.boot.docker.compose.lifecycle.DockerComposeProperties.Skip)",
+      "Bash(javap -p -cp \"C:\\\\Users\\\\魏升林\\\\.m2\\\\repository\\\\org\\\\springframework\\\\boot\\\\spring-boot-docker-compose\\\\4.0.6\\\\spring-boot-docker-compose-4.0.6.jar\" org.springframework.boot.docker.compose.lifecycle.LifecycleManagement)",
+      "Bash(npm install *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\魏升林\\Desktop\\my_project\\Frontend"
+    ]
+  }
+}

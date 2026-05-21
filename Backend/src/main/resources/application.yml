@@ -1,0 +1,44 @@
+# ==================== 服务器 ====================
+server:
+  port: 8080
+
+spring:
+  application:
+    name: smart-ticket-system
+
+  # ==================== 数据库 ====================
+  datasource:
+    url: jdbc:mysql://38.76.207.21:3306/my_project?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: my_project
+    password: ixcrDaYsyE5Hc6bh
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # ==================== SQL 初始化 ====================
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
+
+# ==================== MyBatis-Plus ====================
+mybatis-plus:
+  type-aliases-package: org.example.my_project.entity
+  mapper-locations: classpath*:mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
+# ==================== JWT ====================
+jwt:
+  secret: my-project-jwt-secret-key-2026-must-be-at-least-256-bits-long
+  expiration: 86400000   # 24小时（毫秒）
+
+# ==================== 日志 ====================
+logging:
+  level:
+    org.example.my_project: debug

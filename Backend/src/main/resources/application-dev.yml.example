@@ -1,0 +1,23 @@
+# ==================== 开发环境配置 ====================
+# 使用方法：复制此文件为 application-dev.yml，填入你的本地数据库信息
+# Windows: copy application-dev.yml.example application-dev.yml
+# Linux/Mac: cp application-dev.yml.example application-dev.yml
+# 启动时指定：--spring.profiles.active=dev
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_project?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: your_mysql_username
+    password: your_mysql_password
+
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
+
+jwt:
+  expiration: 3600000    # 开发环境 1 小时
+
+logging:
+  level:
+    org.example.my_project: debug
