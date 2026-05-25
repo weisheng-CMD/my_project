@@ -33,20 +33,25 @@ MySQL 2 题：72%
 
 ---
 
-## 还没加到项目里的（第1周任务）
+## 第1周任务（全部完成）
 
-- [ ] Spring Security + JWT 登录鉴权
-- [ ] 全局异常处理（@ControllerAdvice）
-- [ ] 参数校验（@Valid / @NotBlank）
-- [ ] 项目 README（项目描述、启动方式、接口文档）
+- [x] Spring Security + JWT 登录鉴权
+- [x] 全局异常处理（@ControllerAdvice）
+- [x] 参数校验（@Valid / @NotBlank）
+- [x] 项目 README（项目描述、启动方式、接口文档）
+
+## 第2周任务
+
+- [ ] 复习 Security + JWT 链路，借此深入 Filter / Interceptor / AOP
+- [ ] IOC 容器原理（Bean 生命周期、循环依赖、三级缓存）
+- [ ] JVM 基础（内存模型、类加载、GC 基础）
+- [ ] Java 基础补漏（HashMap、线程池、synchronized）
 
 ## 还没学的
 
-- [ ] IOC 容器原理（Bean 生命周期、循环依赖）
-- [ ] Filter / Interceptor / AOP 完整链路
-- [ ] Java 基础突击（HashMap 细节补正、线程池、synchronized、JVM）
 - [ ] MySQL EXPLAIN 执行计划
 - [ ] Redis 基础（5 种数据类型、缓存穿透/击穿/雪崩）
+- [ ] JVM 进阶（调优、各种 GC 对比）
 
 ## 知识导图文件
 
